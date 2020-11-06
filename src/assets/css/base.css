@@ -1,0 +1,68 @@
+html,body,section,header,footer,nav,article,main,h1,h2,h3,h4,h5,h6,ol,ul,ol,li,dl,dt,dd,p,form,fieldset,legend,input,textarea,select,img,span{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: #fff;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+
+/* 去倾斜 */
+em,i{
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+b,strong{
+    font-weight: normal;
+}
+
+/* 去点 */
+li{
+    list-style: none;
+}
+
+img{
+    /* 照顾低版本浏览器如果图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底部有空白间隙问题 */
+    vertical-align: middle;
+    /* 取消图片底部有空白间隙问题 */
+    /* display: block; */
+}
+
+button{
+    /* 当我们鼠标经过button  按钮的时候，鼠标变成小手 */
+    cursot:pointer;
+}
+
+a{
+    /* 去掉链接下划线 */
+    text-decoration: none;
+}
+
+button,input,select{
+    /* 清除轮廓线 */
+    outline:none;
+}
+
+/* 隐藏 */
+.none{
+    display: none;
+}
+
+/* 清除浮动 */
+.clearfix::after{
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
